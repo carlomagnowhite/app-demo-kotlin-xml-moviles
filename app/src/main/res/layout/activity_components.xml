@@ -10,8 +10,66 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="TextView"
+        android:layout_marginTop="80dp"
+        android:text="@string/welcome"
+        android:textColor="@color/celeste"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="176dp" />
+        tools:layout_editor_absoluteX="146dp" />
+
+    <EditText
+        android:id="@+id/edtApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Ingrese sus apellidos"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombres" />
+
+    <EditText
+        android:id="@+id/edtNombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Ingrese sus nombres"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:text="CONFIRMAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtApellidos" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="178dp"
+        android:textColor="@color/black"
+        android:text="[Resultado]"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

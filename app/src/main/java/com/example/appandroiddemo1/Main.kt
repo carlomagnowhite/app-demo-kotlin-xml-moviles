@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.appandroiddemo1.databinding.ActivityComponentsBinding
 
-class components : AppCompatActivity() {
+class Main : AppCompatActivity() {
     private lateinit var binding: ActivityComponentsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,12 +14,12 @@ class components : AppCompatActivity() {
         imprimir()
     }
 
-    fun imprimir() {
+    fun imprimir(){
         with(binding){
             btnConfirmar.setOnClickListener{
                 val nombre = edtNombres.text.toString()
                 val apellidos = edtApellidos.text.toString()
-                textView.setText(nombre + apellidos)
+                txtResultado.setText(nombre + apellidos)
             }
         }
     }
