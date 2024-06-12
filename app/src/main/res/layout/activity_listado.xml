@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fbtn"
+        android:id="@+id/btnNuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="325dp"

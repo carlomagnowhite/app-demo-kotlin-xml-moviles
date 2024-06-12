@@ -14,29 +14,27 @@
         tools:targetApi="31">
         <activity
             android:name=".Registro"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity
             android:name=".Listado"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".Main"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight">
+            android:exported="true">
         </activity>
         <activity
             android:name=".components"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppAndroidDemo1">
+            android:exported="true">
         </activity>
     </application>
 
